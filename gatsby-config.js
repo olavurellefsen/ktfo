@@ -9,6 +9,7 @@ module.exports = {
     author: `@olavur`,
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -41,6 +42,17 @@ module.exports = {
           "member",
         ],
         queryLimit: 1000,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Lato`,
+            variants: [`300`, `400`, `700`],
+          },
+        ],
       },
     },
   ],
