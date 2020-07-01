@@ -8,10 +8,10 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Heim" />
     <MainContainer>
-      <SubContainer>
+      <LeftContainer>
         <img src={imageForoysKT} alt="FøroysKT" />
-      </SubContainer>
-      <SubContainer>
+      </LeftContainer>
+      <RightContainer>
         <br />
         <h1>Nú er at halda fast í talgildingini av Føroyum</h1>
         <p>
@@ -38,7 +38,7 @@ const IndexPage = () => (
         <p>25. nov 2019: <LinkStyle href="https://www.industry.fo/ti%C3%B0indi?Action=1&NewsId=2505&PID=11933">#Rita1tíma verður í næstu viku</LinkStyle></p>
         <p>2. sep 2019: <LinkStyle href="https://www.industry.fo/ti%C3%B0indi?Action=1&NewsId=2444&PID=11933">KT-felagið vil útbúgva fleiri KT-fólk</LinkStyle></p>
         <p><LinkStyle href="https://www.industry.fo/ti%C3%B0indi/kt-og-samskifti">Fleiri tíðindi...</LinkStyle></p>
-      </SubContainer>
+      </RightContainer>
     </MainContainer>
   </Layout>
 )
@@ -51,8 +51,13 @@ const MainContainer = styled.div`
   }
 `
 
-const SubContainer = styled.div`
+const LeftContainer = styled.div`
   flex: 1;
+`
+
+const RightContainer = styled.div`
+  flex: 1;
+  padding: 0 0 0 30px;
 `
 
 const LinkStyle = styled.a`
