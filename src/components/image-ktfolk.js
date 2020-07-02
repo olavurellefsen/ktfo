@@ -4,13 +4,13 @@ import { graphql, StaticQuery } from "gatsby"
 import styled from "styled-components"
 import Img from "gatsby-image"
 
-const ImageSection = (siteTitle = `123`) => (
+const ImageSection = () => (
   <StaticQuery
     query={graphql`
       query {
-        desktop: file(relativePath: { eq: "kt-felagid.png" }) {
+        desktop: file(relativePath: { eq: "kt-folk-í-foroyum.png" }) {
           childImageSharp {
-            fluid(quality: 90, maxWidth: 255) {
+            fluid(quality: 90, maxWidth: 620) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
@@ -25,14 +25,15 @@ const ImageSection = (siteTitle = `123`) => (
 )
 
 const ImgStyle = styled(Img)`
-  min-width: 255px;
-  min-height: 33.5px;
-  width: 255px;
-  height: 33.5px;
-  max-width: 45vw;
-  max-height: 5.91vw;
+  min-width: 285px;
+  min-height: 300px;
+  width: 405px;
+  height: 423px;
+  max-width: 90vw;
+  max-height: 94vw;
   position: static;
   z-index: 10;
+  margin: 20px 0;
 `
 
 ImageSection.propTypes = {
