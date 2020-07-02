@@ -4,7 +4,7 @@ import { graphql, StaticQuery } from "gatsby"
 import styled from "styled-components"
 import Img from "gatsby-image"
 
-const ImageSection = siteTitle => (
+const ImageSection = () => (
   <StaticQuery
     query={graphql`
       query {
@@ -19,7 +19,7 @@ const ImageSection = siteTitle => (
     `}
     render={data => {
       const imageData = data.desktop.childImageSharp.fluid
-      return <ImgStyle fluid={imageData} alt={siteTitle} />
+      return <ImgStyle fluid={imageData} />
     }}
   />
 )

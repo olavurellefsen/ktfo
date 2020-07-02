@@ -52,7 +52,6 @@ const TopBackground = styled.div`
   left: 0;
   height: 90px;
   width: 100vw;
-  background: rgb(255, 255, 255, 0.5);
   z-index: 20;
   @media (min-width: 768px) {
     display: none;

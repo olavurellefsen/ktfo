@@ -2,7 +2,12 @@ import React from "react"
 import { elastic as Menu } from "react-burger-menu"
 
 const BurgerMenu = () => (
-  <Menu pageWrapId={"page-wrap"} outerContainerId={"outer-container"}>
+  <Menu
+    pageWrapId={"page-wrap"}
+    outerContainerId={"outer-container"}
+    width={220}
+  >
+    <main id="page-wrap" />
     <a id="heim" className="menu-item" href="/">
       Heim
     </a>

@@ -29,7 +29,7 @@ const IndexPage = () => (
           føroyingar. Talgildu Føroyar hevur í sínum verkætlanum valt at brúka
           føroyskar veitarar, og tað fegnast vit um.
         </p>
-        <p><LinkStyle href="https://www.industry.fo/ti%C3%B0indi?Action=1&NewsId=2679&PID=11933">Les meiri...</LinkStyle></p>
+        <p><LinkStyle href="https://www.industry.fo/ti%C3%B0indi?Action=1&NewsId=2679&PID=11933">Les meira</LinkStyle></p>
         <br/>
         <hr />
         <p>15. juni 2020: <LinkStyle href="https://www.industry.fo/ti%C3%B0indi?Action=1&NewsId=2669&PID=11933">Ulla heldur fram sum forkvinna</LinkStyle></p>
@@ -37,7 +37,7 @@ const IndexPage = () => (
         <p>9. des 2019: <LinkStyle href="https://www.industry.fo/ti%C3%B0indi?Action=1&NewsId=2513&PID=11933">Fleiri enn 300 næmingar forrita hesa vikuna</LinkStyle></p>
         <p>25. nov 2019: <LinkStyle href="https://www.industry.fo/ti%C3%B0indi?Action=1&NewsId=2505&PID=11933">#Rita1tíma verður í næstu viku</LinkStyle></p>
         <p>2. sep 2019: <LinkStyle href="https://www.industry.fo/ti%C3%B0indi?Action=1&NewsId=2444&PID=11933">KT-felagið vil útbúgva fleiri KT-fólk</LinkStyle></p>
-        <p><LinkStyle href="https://www.industry.fo/ti%C3%B0indi/kt-og-samskifti">Fleiri tíðindi...</LinkStyle></p>
+        <p><LinkStyle href="https://www.industry.fo/ti%C3%B0indi/kt-og-samskifti">Fleiri tíðindi</LinkStyle></p>
       </RightContainer>
     </MainContainer>
   </Layout>

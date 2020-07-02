@@ -52,6 +52,10 @@ module.exports = {
             family: `Lato`,
             variants: [`300`, `400`, `700`],
           },
+          {
+            family: `Merriweather Sans`,
+            variants: [`800`],
+          },
         ],
       },
     },
