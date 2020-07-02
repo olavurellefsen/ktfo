@@ -8,7 +8,7 @@ const Content = () => (
     <StaticQuery
       query={graphql`
         query {
-          allStrapiMember {
+          allStrapiMember(sort: { fields: ranking }) {
             edges {
               node {
                 Title
@@ -26,17 +26,20 @@ const Content = () => (
         <ContentContainer>
           <HeaderStyle>Limir í KT-felagnum</HeaderStyle>
           <LimirContainer>
-            {data.allStrapiMember.edges.map((edge, i) => (
-              <LimurStyle key={i}>
-                <LinkStyle href={edge.node.Url}>
-                  <ImageStyle
-                    src={edge.node.Logo.publicURL}
-                    alt={edge.node.Title}
-                  />
-                </LinkStyle>
-                <DescriptionStyle>{edge.node.Description}</DescriptionStyle>
-              </LimurStyle>
-            ))}
+            {data.allStrapiMember.edges.map((edge, i) => {
+              let node = edge.node
+              let url = node.Url || ``
+              return (
+                <LimurStyle key={i}>
+                  <LinkStyle href={url}>
+                    {node.Logo && (
+                      <ImageStyle src={node.Logo.publicURL} alt={node.Title} />
+                    )}
+                  </LinkStyle>
+                  <DescriptionStyle>{edge.node.Description}</DescriptionStyle>
+                </LimurStyle>
+              )
+            })}
           </LimirContainer>
         </ContentContainer>
       )}
