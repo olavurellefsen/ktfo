@@ -8,7 +8,7 @@ const ImageSection = () => (
   <StaticQuery
     query={graphql`
       query {
-        desktop: file(relativePath: { eq: "kt-folk-í-foroyum.png" }) {
+        desktop: file(relativePath: { eq: "kt-folk-i-foroyum.png" }) {
           childImageSharp {
             fluid(quality: 90, maxWidth: 620) {
               ...GatsbyImageSharpFluid_withWebp
